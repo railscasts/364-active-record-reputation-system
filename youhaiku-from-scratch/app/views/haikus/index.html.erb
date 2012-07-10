@@ -1,0 +1,8 @@
+<% if current_user %>
+  <%= form_for Haiku.new do |f| %>
+    <div class="field"><%= f.text_area :content, rows: 3, cols: 40 %></div>
+    <div class="actions"><%= f.submit "Add Haiku" %></div>
+  <% end %>
+<% end %>
+
+<%= render @haikus %>

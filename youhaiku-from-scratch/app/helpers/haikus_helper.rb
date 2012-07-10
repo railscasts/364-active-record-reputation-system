@@ -1,0 +1,2 @@
+module HaikusHelper
+end

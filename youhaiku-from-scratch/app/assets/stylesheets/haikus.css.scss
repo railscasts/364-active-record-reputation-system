@@ -1,0 +1,14 @@
+// Place all the styles related to the haikus controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.haiku {
+  p {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  em, em a {
+    color: #777;
+    font-style: normal;
+  }
+}

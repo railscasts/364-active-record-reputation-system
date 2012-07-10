@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  haiku: 
+  user: 
+  value: 1
+
+two:
+  haiku: 
+  user: 
+  value: 1

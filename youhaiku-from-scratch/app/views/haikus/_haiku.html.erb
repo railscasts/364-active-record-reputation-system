@@ -1,0 +1,11 @@
+<div class="haiku">
+  <%= simple_format haiku.content %>
+  <em>
+    -- <%= haiku.user.name %>
+    | <%= pluralize haiku.votes, "vote" %>
+    <% if current_user && current_user.can_vote_for?(haiku) %>
+      | <%= link_to "up", vote_haiku_path(haiku, value: 1), method: "post" %>
+      | <%= link_to "down", vote_haiku_path(haiku, value: -1), method: "post" %>
+    <% end %>
+  </em>
+</div>
